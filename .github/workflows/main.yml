@@ -1,0 +1,18 @@
+name: update sigma folder
+
+on:
+  push:
+    branches: [main]
+    paths: "commonalities/**"
+
+jobs:
+  update-sigma:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout alpha
+        uses: actions/checkout@v2
+        with:
+          submodules: "recursive"
+      - name: push the changes to sigma
+        run: |
+          git subtree push --prefix commonalities https://github.com/palaniappanodico/sigma.git main
