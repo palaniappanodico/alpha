@@ -3,7 +3,7 @@ name: update sigma folder
 on:
   push:
     branches: [main]
-    paths: "damal/**"
+    paths: "dumeel/**"
 
 jobs:
   update-sigma:
@@ -16,5 +16,5 @@ jobs:
 
       - name: push the changes to delta
         run: |
-          # git subtree pull --prefix damal https://github.com/palaniappanodico/delta.git main
-          git subtree push --prefix damal https://github.com/palaniappanodico/delta.git main
+          # git subtree pull --prefix dumeel https://github.com/palaniappanodico/common.git main
+          git subtree push --prefix dumeel https://github.com/palaniappanodico/common.git main
