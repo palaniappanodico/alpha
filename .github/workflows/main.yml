@@ -18,4 +18,4 @@ jobs:
         run: |
           git fetch https://github.com/palaniappanodico/sigma.git main
           git merge --allow-unrelated-histories origin/main
-          git subtree push --prefix commonalities https://github.com/palaniappanodico/sigma.git main
+          git subtree push -f --prefix commonalities https://github.com/palaniappanodico/sigma.git main
