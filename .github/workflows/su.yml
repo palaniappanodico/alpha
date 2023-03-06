@@ -3,7 +3,7 @@ name: update sigma folder
 on:
   push:
     branches: [main]
-    paths: "cars/**"
+    paths: "legal/**"
 
 jobs:
   update-sigma:
