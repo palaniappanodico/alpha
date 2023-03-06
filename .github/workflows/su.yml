@@ -16,5 +16,5 @@ jobs:
 
       - name: push the changes to delta
         run: |
-          git subtree pull --prefix damal https://github.com/palaniappanodico/delta.git main
+          # git subtree pull --prefix damal https://github.com/palaniappanodico/delta.git main
           git subtree push --prefix damal https://github.com/palaniappanodico/delta.git main
