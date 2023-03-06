@@ -11,9 +11,7 @@ jobs:
     steps:
       - name: checkout alpha
         uses: actions/checkout@v2
-        with:
-          submodules: "recursive"
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+
       - name: push the changes to sigma
         run: |
           git subtree push --prefix commonalities https://github.com/palaniappanodico/sigma.git main
