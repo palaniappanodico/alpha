@@ -18,5 +18,5 @@ jobs:
         run: |
           # git merge --allow-unrelated-histories -X subtree=cars https://github.com/palaniappanodico/wheels.git main
           # git subtree pull --prefix cars https://github.com/palaniappanodico/wheels.git main --squash
-          git pull --squash -s subtree git@github.com:palaniappanodico/wheels.git main
+          git pull --squash -s subtree https://github.com/palaniappanodico/wheels.git main
           git subtree push --prefix cars https://github.com/palaniappanodico/wheels.git main --squash
