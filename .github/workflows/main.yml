@@ -16,5 +16,6 @@ jobs:
 
       - name: push the changes to sigma
         run: |
-          git subtree pull --prefix commonalities https://github.com/palaniappanodico/sigma.git main
+          git getch https://github.com/palaniappanodico/sigma.git main
+          git merge --allow-unrelated-histories origin/main
           git subtree push --prefix commonalities https://github.com/palaniappanodico/sigma.git main
