@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: checkout alpha
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: push the changes to sigma
         run: |
