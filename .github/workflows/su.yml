@@ -16,5 +16,5 @@ jobs:
 
       - name: push the changes to delta
         run: |
-          git subtree pull --prefix legal https://github.com/palaniappanodico/official.git main --squash
+          git subtree pull --prefix legal https://github.com/palaniappanodico/official.git main
           git subtree push --prefix legal https://github.com/palaniappanodico/official.git main
